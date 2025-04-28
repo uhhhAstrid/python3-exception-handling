@@ -17,7 +17,7 @@ if __name__ == '__main__':
     # The top of the list, where "flawed_code()" is listed, 
         # will always be the first part of the code that started us towards the error
     
-    # The bottom of the list, where "print(10/0)" -  is listed, 
+    # The bottom of the list, where "print(10/0)" is listed, 
         # will always be the line that threw the error
     flawed_code()
 

@@ -9,14 +9,15 @@ def flawed_code():
 if __name__ == '__main__':
     print("Running Code")
     
-    # This will prevent the exception from stopping the entire program
-    # Instead, it will stop the method that caused the error
-    try:
+    # This will prevent the error from stopping the entire program
+    # Instead, the code will stop the method that caused the error
+    # In order to keep the program running
+    try: # This means, "this code might not work, so if it breaks, don't stop the whole program"
         flawed_code()
-    except ZeroDivisionError: 
+    except ZeroDivisionError: # This means, "look for errors called 'ZeroDivisionError', and if there is one, run the nested code"
         # the code resumes here after catching the error
         print("Method failed to run; cannot divide by 0.")    
     
-    # Because the exception was caught, the main method wasn't stopped,
+    # Because the error was caught, the main method wasn't stopped,
         # so this line will run too!
     print("Code ran")
